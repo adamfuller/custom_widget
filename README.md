@@ -1,4 +1,4 @@
-# Custom Widget
+# Custom Widget v0.0.1
 
 A CustomPainter and CustomPaint wrapper that simplifies and streamlines the process of creating 
 unique widgets in Flutter.
@@ -15,10 +15,12 @@ dependencies:
 
 ## How to use
 
-Add the following to a file/library/package where you intend to use a CustomWidget
+Import the CustomWidget package
 ```dart
 import 'package:custom_widget/custom_widget.dart' as cw;
 ```
+Use CustomWidget as you would any other widget.
+The only major difference is its onPaint parameter.
 
 The following will produce a widget 50 pixels wide and 50 pixels tall with a white
 arc rotating in the center of it.
