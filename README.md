@@ -22,9 +22,6 @@ import 'package:custom_widget/custom_widget.dart' as cw;
 Use CustomWidget as you would any other widget.
 The only major difference is its onPaint parameter.
 
-The following will produce a widget 50 pixels wide and 50 pixels tall with a white
-arc rotating in the center of it.
-This arc will complete 1 rotation every 5 seconds
 
 ```dart
 cw.CustomWidget(
@@ -48,3 +45,6 @@ cw.CustomWidget(
     },
 )
 ```
+Produces the following with a transparent background instead of a black one
+</br>
+<img src="https://raw.githubusercontent.com/adamfuller/custom_widget/master/example/spinner.gif" width="145px">
