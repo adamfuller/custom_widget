@@ -11,11 +11,14 @@ class CustomWidget extends StatefulWidget {
   final double size;
   /// Length of time for the widget to reanimate
   final Duration duration;
+  /// Does the widget constantly repaint
+  final bool doesRepaint;
 
   CustomWidget({
     @required this.onPaint,
     this.size,
     this.duration = const Duration(seconds: 2),
+    this.doesRepaint = true,
   });
 
   @override
@@ -42,7 +45,7 @@ class _CustomWidgetState extends State<CustomWidget> with SingleTickerProviderSt
       ),
     )..addListener(() => setState(() {}));
 
-    _controller.repeat();
+    if (widget.doesRepaint) _controller.repeat();
   }
 
   @override
