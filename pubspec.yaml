@@ -1,6 +1,6 @@
 name: custom_widget
 description: A widget that makes it easy to have a custom painted and animated widget in Flutter
-version: 0.0.1
+version: 0.1.0
 author: Adam Fuller
 homepage: https://github.com/adamfuller/custom_widget
 
