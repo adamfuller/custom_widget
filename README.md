@@ -10,6 +10,7 @@ dependencies:
   custom_widget:
     git:
       url: git://github.com/adamfuller/custom_widget.git
+      ref: 0.1.1
 ```
 
 
