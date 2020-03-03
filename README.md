@@ -1,4 +1,4 @@
-# Custom Widget v0.0.1
+# Custom Widget v0.1.1
 
 A CustomPainter and CustomPaint wrapper that simplifies and streamlines the process of creating 
 unique widgets in Flutter.
@@ -26,7 +26,7 @@ The only major difference is its onPaint parameter.
 ```dart
 cw.CustomWidget(
     duration: Duration(seconds: 5),
-    size: 50,
+    size: Size.square(50),
     onPaint: (canvas, size, progress) {
         Paint p = Paint();
         p.color = Colors.white;
