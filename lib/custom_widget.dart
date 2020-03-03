@@ -9,7 +9,7 @@ class CustomWidget extends StatefulWidget {
   final Function(Canvas, Size, double) onPaint;
 
   /// Height and width of the widget if null, this expands to fill parent
-  final double size;
+  final Size size;
 
   /// Length of time for the widget to reanimate
   final Duration duration;
@@ -112,13 +112,10 @@ class _CustomWidgetState extends State<CustomWidget> with SingleTickerProviderSt
       child: CustomPaint(
         key: _key,
         child: widget.size != null
-            ? SizedBox.fromSize(
-                size: Size.square(widget.size),
-              )
+            ? SizedBox.fromSize(size:widget.size)
             : SizedBox.expand(),
         painter: EasyPainter(
           onPaint: widget.onPaint ?? () {},
-          size: widget.size,
           animation: _animation,
         ),
       ),
